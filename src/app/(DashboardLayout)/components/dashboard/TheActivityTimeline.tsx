@@ -27,7 +27,6 @@ import { IconHeartFilled, IconMessage } from "@tabler/icons-react";
 import CustomFormLabel from "../forms/theme-elements/CustomFormLabel";
 import CustomTextField from "../forms/theme-elements/CustomTextField";
 import CustomSelect from "../forms/theme-elements/CustomSelect";
-import { getImagePrefix } from "@/utils/utils";
 
 const ActivityTimeline = () => {
   const [value, setValue] = React.useState("1");
@@ -78,7 +77,7 @@ const ActivityTimeline = () => {
                         boxShadow: "none",
                       }}
                     >
-                      <Avatar src={`${getImagePrefix()}images/users/1.jpg`} alt="user" />
+                      <Avatar src="/images/users/1.jpg" alt="user" />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
@@ -95,28 +94,28 @@ const ActivityTimeline = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={12} sm={4} lg={3}>
                         <Avatar
-                          src={`${getImagePrefix()}images/big/img1.jpg`}
+                          src="/images/big/img1.jpg"
                           alt="bg1"
                           sx={{ borderRadius: 0, width: "100%", height: 135 }}
                         />
                       </Grid>
                       <Grid item xs={12} sm={4} lg={3}>
                         <Avatar
-                          src={`${getImagePrefix()}images/big/img2.jpg`}
+                          src="/images/big/img2.jpg"
                           alt="bg1"
                           sx={{ borderRadius: 0, width: "100%", height: 135 }}
                         />
                       </Grid>
                       <Grid item xs={12} sm={4} lg={3}>
                         <Avatar
-                          src={`${getImagePrefix()}images/big/img3.jpg`}
+                          src="/images/big/img3.jpg"
                           alt="bg1"
                           sx={{ borderRadius: 0, width: "100%", height: 135 }}
                         />
                       </Grid>
                       <Grid item xs={12} sm={4} lg={3}>
                         <Avatar
-                          src={`${getImagePrefix()}images/big/img4.jpg`}
+                          src="/images/big/img4.jpg"
                           alt="bg1"
                           sx={{ borderRadius: 0, width: "100%", height: 135 }}
                         />
@@ -149,7 +148,7 @@ const ActivityTimeline = () => {
                         boxShadow: "none",
                       }}
                     >
-                      <Avatar src={`${getImagePrefix()}images/users/2.jpg`} alt="user" />
+                      <Avatar src="/images/users/2.jpg" alt="user" />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
@@ -163,7 +162,7 @@ const ActivityTimeline = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={12} sm={4} lg={3}>
                         <Avatar
-                          src={`${getImagePrefix()}images/big/img4.jpg`}
+                          src="/images/big/img4.jpg"
                           alt="bg1"
                           sx={{ borderRadius: 0, width: "100%", height: 135 }}
                         />
@@ -215,7 +214,7 @@ const ActivityTimeline = () => {
                         boxShadow: "none",
                       }}
                     >
-                      <Avatar src={`${getImagePrefix()}images/users/3.jpg`} alt="user" />
+                      <Avatar src="/images/users/3.jpg" alt="user" />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
@@ -265,7 +264,7 @@ const ActivityTimeline = () => {
                         boxShadow: "none",
                       }}
                     >
-                      <Avatar src={`${getImagePrefix()}images/users/4.jpg`} alt="user" />
+                      <Avatar src="/images/users/4.jpg" alt="user" />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
@@ -302,7 +301,7 @@ const ActivityTimeline = () => {
                         boxShadow: "none",
                       }}
                     >
-                      <Avatar src={`${getImagePrefix()}images/users/5.jpg`} alt="user" />
+                      <Avatar src="/images/users/5.jpg" alt="user" />
                     </TimelineDot>
                   </TimelineSeparator>
                   <TimelineContent>

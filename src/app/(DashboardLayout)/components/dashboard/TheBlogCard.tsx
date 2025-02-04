@@ -1,4 +1,3 @@
-import { getImagePrefix } from "@/utils/utils";
 import {
   Box,
   CardContent,
@@ -16,7 +15,7 @@ const BlogCard = () => {
     <Card variant="outlined" sx={{ p: 0 }}>
       <CardMedia
         sx={{ height: 220 }}
-        image={`${getImagePrefix()}/images/backgrounds/u5.jpg`}
+        image="/images/backgrounds/u5.jpg"
         title="green iguana"
       />
       <CardContent>
@@ -54,9 +53,9 @@ const BlogCard = () => {
           alignItems="center"
         >
           <Stack direction="row" spacing={1}>
-            <Avatar alt="Remy Sharp" src={`${getImagePrefix()}images/users/1.jpg`} />
-            <Avatar alt="Travis Howard" src={`${getImagePrefix()}images/users/2.jpg`} />
-            <Avatar alt="Cindy Baker" src={`${getImagePrefix()}images/users/3.jpg`} />
+            <Avatar alt="Remy Sharp" src="/images/users/1.jpg" />
+            <Avatar alt="Travis Howard" src="/images/users/2.jpg" />
+            <Avatar alt="Cindy Baker" src="/images/users/3.jpg" />
           </Stack>
           <IconButton>
             <IconMessageCircle2 width={20} />

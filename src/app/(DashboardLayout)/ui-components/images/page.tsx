@@ -3,56 +3,55 @@ import { Grid, ImageList, ImageListItem,Paper} from "@mui/material";
 import BaseCard from '@/app/(DashboardLayout)/components/shared/BaseCard';
 import Image from "next/image";
 
-// import img1 from "/images/backgrounds/blog-img2.jpg";
-// import img2 from "/images/backgrounds/blog-img3.jpg";
-// import img3 from "/images/backgrounds/blog-img4.jpg";
-// import img4 from "/images/backgrounds/blog-img5.jpg";
-// import img5 from "/images/backgrounds/blog-img6.jpg";
-// import img6 from "/images/backgrounds/blog-img10.jpg";
-// import img7 from "/images/backgrounds/blog-img1.jpg";
-import { getImagePrefix } from "@/utils/utils";
+import img1 from "public/images/backgrounds/blog-img2.jpg";
+import img2 from "public/images/backgrounds/blog-img3.jpg";
+import img3 from "public/images/backgrounds/blog-img4.jpg";
+import img4 from "public/images/backgrounds/blog-img5.jpg";
+import img5 from "public/images/backgrounds/blog-img6.jpg";
+import img6 from "public/images/backgrounds/blog-img10.jpg";
+import img7 from "public/images/backgrounds/blog-img1.jpg";
 const itemData = [
   {
-    img: "/images/backgrounds/blog-img1.jpg" ,
+    img: img1 ,
     rows: 2,
     cols: 2,
   },
   {
-    img: "/images/backgrounds/blog-img2.jpg" ,
+    img: img2 ,
     title: "Burger",
   },
   {
-    img: "/images/backgrounds/blog-img3.jpg" ,
+    img: img3 ,
   },
   {
-    img:"/images/backgrounds/blog-img2.jpg",
+    img:img2,
     cols: 2,
   },
   {
-    img: "/images/backgrounds/blog-img4.jpg",
+    img: img4,
     cols: 2,
     rows: 2,
   },
   {
-    img: "/images/backgrounds/blog-img3.jpg",
+    img: img3,
     cols: 2,
     rows: 2,
   },
   
   {
-    img: "/images/backgrounds/blog-img6.jpg",
+    img: img6,
   },
   {
-    img: "/images/backgrounds/blog-img5.jpg",
+    img: img5,
     title: "Fern",
   },
   {
-    img: "/images/backgrounds/blog-img1.jpg",
+    img: img7,
     rows: 2,
     cols: 2,
   },
   {
-    img:"/images/backgrounds/blog-img2.jpg",
+    img:img2,
     cols: 2,
   },
 
@@ -75,10 +74,8 @@ const Images = () => {
                 rows={itemimg.rows || 1}
               >
                 <Image
-                  src={`${getImagePrefix()}${itemimg.img}`}
+                  src={itemimg.img}
                   alt="img"
-                  width="100"
-                  height="100"
                   style={{ width: "100%",height:"100%",objectFit:"cover",objectPosition:"top"}}
                 />
               </ImageListItem>

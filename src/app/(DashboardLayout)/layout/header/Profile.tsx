@@ -22,7 +22,6 @@ import {
   IconMail,
   IconShield,
 } from "@tabler/icons-react";
-import { getImagePrefix } from "@/utils/utils";
 
 const Profile = () => {
   const [anchorEl2, setAnchorEl2] = useState(null);
@@ -56,7 +55,7 @@ const Profile = () => {
         onClick={handleClick2}
       >
         <Avatar
-          src={`${getImagePrefix()}images/users/user2.jpg`}
+          src={"/images/users/user2.jpg"}
           alt={"ProfileImg"}
           sx={{
             width: 35,

@@ -1,10 +1,9 @@
-import { getImagePrefix } from "@/utils/utils";
 import { Box, Avatar, Typography, useMediaQuery,Tooltip, IconButton } from "@mui/material";
 export const SidebarProfile = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url('${getImagePrefix()}images/backgrounds/sidebar-profile-bg.jpg')`,
+        backgroundImage: `url('/images/backgrounds/sidebar-profile-bg.jpg')`,
         borderRadius: "0 !important",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -15,7 +14,7 @@ export const SidebarProfile = () => {
         <Box px="12px" py="28px" borderRadius="0 !important">
           <Avatar
             alt="Remy Sharp"
-            src={`${getImagePrefix()}images/users/user2.jpg`}
+            src={"/images/users/user2.jpg"}
             sx={{ height: 50, width: 50 }}
           />
         </Box>

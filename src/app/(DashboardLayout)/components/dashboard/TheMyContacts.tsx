@@ -11,7 +11,6 @@ import {
   ListItemButton,
   Badge,
 } from "@mui/material";
-import { getImagePrefix } from "@/utils/utils";
 
 const contacts = [
   {
@@ -69,7 +68,7 @@ const MyContacts = () => {
                         },
                       }}
                     >
-                      <Avatar src={`${getImagePrefix()}${contact.img}`} alt="1" />
+                      <Avatar src={contact.img} alt="1" />
                     </Badge>
                   </ListItemAvatar>
                   <ListItemText
