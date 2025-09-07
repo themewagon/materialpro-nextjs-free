@@ -10,9 +10,20 @@
  
 ## Getting Started
 
-Clone from GitHub 
+1. Clone from GitHub 
 ```
 https://github.com/themewagon/materialpro-nextjs-free.git
+```
+2. Install Dependencies
+
+```
+npm i
+```
+
+3. Run the development server:
+
+```
+npm run dev
 ```
 
 ## Author
